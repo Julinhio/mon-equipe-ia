@@ -172,5 +172,12 @@
   .confirm-button-link {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
     margin-top: 16px;
   }
+
+  .confirm-button-link button {
+    width: auto;
+  }
+  
