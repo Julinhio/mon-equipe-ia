@@ -3,109 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <title>Accueil – Mon Équipe IA</title>
-  <link rel="stylesheet" href="/mon-equipe-ia/style.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-    .card h3 {
-      margin-bottom: 8px;
-    }
-    .card .tags {
-      margin-top: 8px;
-    }
-    .card .tags span {
-      margin-bottom: 0;
-    }
-    .agent-card {
-      margin-bottom: 24px;
-    }
-    .agent-description {
-      margin-bottom: 8px;
-    }
-    .confirm-button-link {
-      display: flex;
-      justify-content: flex-start;
-      margin-top: 12px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/mon-equipe-ia/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <h1>Bienvenue 👋</h1>
-      <p class="login-subtext">Voici vos assistants IA. Cliquez sur chacun pour en savoir plus.</p>
-    </div>
-
-    <div class="agent-card card">
-      <h3>Assistant formation</h3>
-      <p class="agent-description">Votre copilote pendant la formation Invest Malin.<br>
-        Accès, vidéos, modules, fiches pratiques… Obtenez des réponses immédiates à toutes vos questions sur la formation.<br>
-        🌟 Plus de clarté, moins de doutes.
-      </p>
-      <div class="tags">
-        <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px; margin-right:6px;">🎓 Formation</span>
-        <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px;">💬 Réponses instantanées</span>
-      </div>
-      <div class="confirm-button-link">
-        <a href="#"><button>Accéder</button></a>
-      </div>
-    </div>
-
-    <div class="agent-card card">
-      <h3>Fiscaliste IA</h3>
-      <p class="agent-description">Simplifiez vos démarches fiscales.<br>
-        TVA sur Booking, LMNP, résidence principale… Posez vos questions à une IA claire, sans jargon.<br>
-        ✅ Des réponses rapides, adaptées à votre situation.
-      </p>
-      <div class="tags">
-        <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px; margin-right:6px;">🧾 Fiscalité</span>
-        <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px;">⏱ Gain de temps</span>
-      </div>
-      <div class="confirm-button-link">
-        <a href="#"><button>Accéder</button></a>
-      </div>
-    </div>
-
-    <div class="agent-card card">
-      <h3>LegalBNB</h3>
-      <p class="agent-description">L’IA qui vous répond comme un juriste.<br>
-        Règlements de copropriété, sous-location, contrat de gestion...<br>
-        Infos juridiques fiables adaptées aux conciergeries Airbnb.<br>
-        🔍 Moins de stress sur vos obligations légales.
-      </p>
-      <div class="tags">
-        <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px; margin-right:6px;">⚖️ Juridique</span>
-        <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px;">💡 Infos pratiques</span>
-      </div>
-      <div class="confirm-button-link">
-        <a href="#"><button>Accéder</button></a>
-      </div>
-    </div>
-
-    <div class="agent-card card">
-      <h3>Résumé d'appel</h3>
-      <p class="agent-description">Ne perdez plus une info client.<br>
-        L’IA résume vos appels en 10 secondes.<br>
-        Suivi clair, structuré, actionnable (besoins, objections, prochaines étapes).<br>
-        📋 Gagnez en rigueur et en temps.
-      </p>
-      <div class="tags">
-        <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px; margin-right:6px;">📲 Suivi client</span>
-        <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px;">✍️ Synthèse rapide</span>
-      </div>
-      <div class="confirm-button-link">
-        <a href="#"><button>Accéder</button></a>
-      </div>
-    </div>
-
+  <div class="card">
+    <h1>Bienvenue 👋</h1>
+    <p>Voici vos assistants IA. Cliquez sur chacun pour en savoir plus.</p>
   </div>
 
-  <script>
-    lucide.createIcons();
-  </script>
+  <div class="card">
+    <h2>Assistant formation</h2>
+    <p>
+      Votre copilote pendant la formation Invest Malin<br>
+      Accès, vidéos, modules, fiches pratiques… Obtenez des réponses immédiates à toutes vos questions sur la formation.<br>
+      🌞 Plus de clarté, moins de doutes.
+    </p>
+    <div>
+      <span class="tag">🎓 Formation</span>
+      <span class="tag">💬 Réponses instantanées</span>
+    </div>
+    <button onclick="location.href='#'">Accéder</button>
+  </div>
+
+  <div class="card">
+    <h2>Fiscaliste IA</h2>
+    <p>
+      Simplifiez vos démarches fiscales<br>
+      TVA sur Booking, LMNP, résidence principale… Posez vos questions à une IA claire, sans jargon.<br>
+      ✅ Des réponses rapides, adaptées à votre situation.
+    </p>
+    <div>
+      <span class="tag">🧾 Fiscalité</span>
+      <span class="tag">⏱ Gain de temps</span>
+    </div>
+    <button onclick="location.href='#'">Accéder</button>
+  </div>
+
+  <div class="card">
+    <h2>LegalBNB</h2>
+    <p>
+      L’IA qui vous répond comme un juriste<br>
+      Règlements de copropriété, sous-location, contrat de gestion... Recevez des infos juridiques fiables adaptées aux conciergeries Airbnb.<br>
+      🔍 Plus de stress sur vos obligations légales.
+    </p>
+    <div>
+      <span class="tag">⚖️ Juridique</span>
+      <span class="tag">💡 Infos pratiques</span>
+    </div>
+    <button onclick="location.href='#'">Accéder</button>
+  </div>
+
+  <div class="card">
+    <h2>Résumé d'appel</h2>
+    <p>
+      Ne perdez plus une info client.<br>
+      L’IA résume vos appels en 10 secondes. Suivi clair, structuré et actionnable (besoins, objections, prochaines étapes).<br>
+      📋 Gagnez en rigueur et en temps.
+    </p>
+    <div>
+      <span class="tag">📲 Suivi client</span>
+      <span class="tag">✍️ Synthèse rapide</span>
+    </div>
+    <button onclick="location.href='#'">Accéder</button>
+  </div>
 </body>
 </html>
+
