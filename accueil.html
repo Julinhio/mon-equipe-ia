@@ -1,72 +1,144 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Accueil – Mon Équipe IA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Mon Équipe IA</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/mon-equipe-ia/style.css">
+  <style>
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .agent-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .agent-card {
+      background-color: var(--color-light-gray);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .agent-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .agent-description {
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .agent-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .tag {
+      background: #f4f4f4;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
+
+    .agent-button {
+      align-self: flex-start;
+    }
+  </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Bienvenue 👋</h1>
-    <p>Voici vos assistants IA. Cliquez sur chacun pour en savoir plus.</p>
-  </div>
-
-  <div class="card">
-    <h2>Assistant formation</h2>
-    <p>
-      Votre copilote pendant la formation Invest Malin<br>
-      Accès, vidéos, modules, fiches pratiques… Obtenez des réponses immédiates à toutes vos questions sur la formation.<br>
-      🌞 Plus de clarté, moins de doutes.
-    </p>
-    <div>
-      <span class="tag">🎓 Formation</span>
-      <span class="tag">💬 Réponses instantanées</span>
+  <div class="container">
+    <div class="header">
+      <h1>Bienvenue 👋</h1>
+      <p>Voici vos assistants IA. Cliquez sur chacun pour en savoir plus.</p>
     </div>
-    <button onclick="location.href='#'">Accéder</button>
-  </div>
 
-  <div class="card">
-    <h2>Fiscaliste IA</h2>
-    <p>
-      Simplifiez vos démarches fiscales<br>
-      TVA sur Booking, LMNP, résidence principale… Posez vos questions à une IA claire, sans jargon.<br>
-      ✅ Des réponses rapides, adaptées à votre situation.
-    </p>
-    <div>
-      <span class="tag">🧾 Fiscalité</span>
-      <span class="tag">⏱ Gain de temps</span>
-    </div>
-    <button onclick="location.href='#'">Accéder</button>
-  </div>
+    <div class="agent-grid">
 
-  <div class="card">
-    <h2>LegalBNB</h2>
-    <p>
-      L’IA qui vous répond comme un juriste<br>
-      Règlements de copropriété, sous-location, contrat de gestion... Recevez des infos juridiques fiables adaptées aux conciergeries Airbnb.<br>
-      🔍 Plus de stress sur vos obligations légales.
-    </p>
-    <div>
-      <span class="tag">⚖️ Juridique</span>
-      <span class="tag">💡 Infos pratiques</span>
-    </div>
-    <button onclick="location.href='#'">Accéder</button>
-  </div>
+      <div class="agent-card">
+        <div>
+          <div class="agent-title">Assistant formation</div>
+          <div class="agent-description">
+            Votre copilote pendant la formation Invest Malin.<br>
+            Accès, vidéos, modules, fiches pratiques… Obtenez des réponses immédiates à toutes vos questions sur la formation.<br>
+            🎯 Plus de clarté, moins de doutes.
+          </div>
+          <div class="agent-tags">
+            <span class="tag">🎓 Formation</span>
+            <span class="tag">💬 Réponses instantanées</span>
+          </div>
+        </div>
+        <button class="agent-button">Accéder</button>
+      </div>
 
-  <div class="card">
-    <h2>Résumé d'appel</h2>
-    <p>
-      Ne perdez plus une info client.<br>
-      L’IA résume vos appels en 10 secondes. Suivi clair, structuré et actionnable (besoins, objections, prochaines étapes).<br>
-      📋 Gagnez en rigueur et en temps.
-    </p>
-    <div>
-      <span class="tag">📲 Suivi client</span>
-      <span class="tag">✍️ Synthèse rapide</span>
+      <div class="agent-card">
+        <div>
+          <div class="agent-title">Fiscaliste IA</div>
+          <div class="agent-description">
+            Simplifiez vos démarches fiscales.<br>
+            TVA sur Booking, LMNP, résidence principale…<br>
+            Posez vos questions de fiscalité courte durée à une IA claire, sans jargon.<br>
+            ✅ Des réponses rapides, adaptées à votre situation.
+          </div>
+          <div class="agent-tags">
+            <span class="tag">🧬 Fiscalité</span>
+            <span class="tag">⏱ Gain de temps</span>
+          </div>
+        </div>
+        <button class="agent-button">Accéder</button>
+      </div>
+
+      <div class="agent-card">
+        <div>
+          <div class="agent-title">LegalBNB</div>
+          <div class="agent-description">
+            L’IA qui vous répond comme un juriste.<br>
+            Règlements de copropriété, sous-location, contrat de gestion...<br>
+            🔍 Plus de stress sur vos obligations légales.
+          </div>
+          <div class="agent-tags">
+            <span class="tag">⚖️ Juridique</span>
+            <span class="tag">💡 Infos pratiques</span>
+          </div>
+        </div>
+        <button class="agent-button">Accéder</button>
+      </div>
+
+      <div class="agent-card">
+        <div>
+          <div class="agent-title">Résumé d'appel</div>
+          <div class="agent-description">
+            Ne perdez plus une info client.<br>
+            L’IA résume vos appels en 10 secondes. Suivi clair, structué, actionnable.<br>
+            📋 Gagnez en rigueur et en temps.
+          </div>
+          <div class="agent-tags">
+            <span class="tag">📲 Suivi client</span>
+            <span class="tag">✍️ Synthèse rapide</span>
+          </div>
+        </div>
+        <button class="agent-button">Accéder</button>
+      </div>
+
     </div>
-    <button onclick="location.href='#'">Accéder</button>
   </div>
 </body>
 </html>
-
