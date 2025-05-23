@@ -6,10 +6,13 @@
   <title>Créer un compte – Mon Équipe IA</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/mon-equipe-ia/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="centered">
   <div class="card">
-    <img src="icone_ia.svg" alt="Logo" class="login-logo" />
+    <div class="icon-wrapper">
+        <i data-lucide="bot"></i>
+    </div>
     <h1>Créer un compte</h1>
     <p class="login-subtext">Rejoignez Mon Équipe IA et créez votre espace personnel.</p>
     <form id="registerForm">
@@ -30,5 +33,8 @@
     <div id="errorMessage" class="error-message"></div>
   </div>
   <script type="module" src="./register.js"></script>
+  <script>
+  lucide.createIcons();
+</script>
 </body>
 </html>
