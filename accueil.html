@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Accueil – Mon Équipe IA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/mon-equipe-ia/style.css">
+  <link rel="stylesheet" href="/mon-equipe-ia/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-  <h1>Bienvenue sur votre espace</h1>
-  <p>Connexion réussie. Vous êtes maintenant dans votre interface personnelle.</p>
-  <button onclick="window.location.href='login.html'">Se déconnecter</button>
+<body class="centered">
+  <div class="card">
+    <h1 style="text-align:center;">Bienvenue 👋</h1>
+    <p class="login-subtext">Voici vos assistants IA. Cliquez sur chacun pour en savoir plus.</p>
+  </div>
+
+  <div class="card">
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+
+      <div class="card" style="padding:16px;">
+        <h3 style="margin-bottom: 8px;">Assistant formation</h3>
+        <p>Votre copilote pendant la formation Invest Malin<br>
+        Accès, vidéos, modules, fiches pratiques… Obtenez des réponses immédiates à toutes vos questions sur la formation.<br>
+        🌟 Plus de clarté, moins de doutes.</p>
+        <div>
+          <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px; margin-right:6px;"> 🎓 Formation</span>
+          <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px;"> 💬 Réponses instantanées</span>
+        </div>
+        <div class="confirm-button-link">
+          <a href="#"><button>Accéder</button></a>
+        </div>
+      </div>
+
+      <div class="card" style="padding:16px;">
+        <h3 style="margin-bottom: 8px;">Fiscaliste IA</h3>
+        <p>Simplifiez vos démarches fiscales<br>
+        TVA sur Booking, LMNP, résidence principale…<br>
+        Posez vos questions de fiscalité courte durée à une IA claire, sans jargon.<br>
+        ✅ Des réponses rapides, adaptées à votre situation.</p>
+        <div>
+          <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px; margin-right:6px;">🧾 Fiscalité</span>
+          <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px;">⏱️ Gain de temps</span>
+        </div>
+        <div class="confirm-button-link">
+          <a href="#"><button>Accéder</button></a>
+        </div>
+      </div>
+
+      <div class="card" style="padding:16px;">
+        <h3 style="margin-bottom: 8px;">LegalBNB</h3>
+        <p>L’IA qui vous répond comme un juriste<br>
+        Règlements de copropriété, sous-location, contrat de gestion...<br>
+        Recevez des infos juridiques fiables adaptées aux conciergeries Airbnb.<br>
+        🔍 Plus de stress sur vos obligations légales.</p>
+        <div>
+          <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px; margin-right:6px;">⚖️ Juridique</span>
+          <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px;">💡 Infos pratiques</span>
+        </div>
+        <div class="confirm-button-link">
+          <a href="#"><button>Accéder</button></a>
+        </div>
+      </div>
+
+      <div class="card" style="padding:16px;">
+        <h3 style="margin-bottom: 8px;">Résumé d'appel</h3>
+        <p>Ne perdez plus une info client.<br>
+        L’IA résume vos appels en 10 secondes.<br>
+        Suivi clair, structuré et actionnable (besoins, objections, prochaines étapes).<br>
+        📋 Gagnez en rigueur et en temps.</p>
+        <div>
+          <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px; margin-right:6px;">📲 Suivi client</span>
+          <span style="background:#f4f4f4; padding:4px 10px; border-radius:12px; font-size:13px;">✍️ Synthèse rapide</span>
+        </div>
+        <div class="confirm-button-link">
+          <a href="#"><button>Accéder</button></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
