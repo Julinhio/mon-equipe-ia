@@ -175,9 +175,16 @@
     align-items: center;
     width: 100%;
     margin-top: 16px;
+    text-decoration: none; 
   }
 
   .confirm-button-link button {
     width: auto;
+    text-decoration: none;
   }
+
+  .centered-title {
+    text-align: center;
+  }
+  
   
