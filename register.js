@@ -26,10 +26,7 @@ form.addEventListener('submit', async (e) => {
 
   const { data, error } = await supabase.auth.signUp({
     email,
-    password,
-    options: {
-      redirectTo: 'https://julinhio.github.io/mon-equipe-ia/'
-    }
+    password
   });
 
   if (error) {
@@ -38,6 +35,5 @@ form.addEventListener('submit', async (e) => {
     return;
   }
 
-  alert('Compte créé ! Veuillez vérifier votre email.');
-  window.location.href = 'login.html';
+  window.location.href = 'account-created.html';
 });
