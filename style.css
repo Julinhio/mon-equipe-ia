@@ -111,5 +111,50 @@
     gap: 16px;
   }
 
+  .login-logo {
+    width: 60px;
+    display: block;
+    margin: 0 auto 16px auto;
+  }
+  
+  .login-subtext {
+    text-align: center;
+    font-size: var(--small-text);
+    color: #666;
+    margin-top: -16px;
+    margin-bottom: 24px;
+  }
+  
+  .forgot-link {
+    display: block;
+    text-align: center;
+    font-size: var(--small-text);
+    color: #999;
+    margin-top: 12px;
+    text-decoration: none;
+  }
+  
+  .forgot-link:hover {
+    text-decoration: underline;
+  }
+  
+  body {
+    background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+  }
 
+  .register-link {
+    display: block;
+    text-align: center;
+    font-size: var(--small-text);
+    color: var(--color-dark);
+    margin-top: 8px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .register-link:hover {
+    text-decoration: underline;
+  }
+  
+  
   
