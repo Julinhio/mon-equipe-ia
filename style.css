@@ -168,3 +168,9 @@
     stroke: var(--color-orange);
     stroke-width: 1.5;
   }
+
+  .centered-title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
