@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Créer un compte – Mon Équipe IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/mon-equipe-ia/style.css" />
+</head>
+<body class="centered">
+  <div class="card">
+    <img src="icone_ia.svg" alt="Logo" class="login-logo" />
+    <h1>Créer un compte</h1>
+    <p class="login-subtext">Rejoignez Mon Équipe IA et créez votre espace personnel.</p>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirmez le mot de passe</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required />
+      </div>
+      <button type="submit">Créer mon compte</button>
+    </form>
+    <div id="errorMessage" class="error-message"></div>
+  </div>
+  <script type="module" src="./register.js"></script>
+</body>
+</html>
