@@ -26,7 +26,10 @@ form.addEventListener('submit', async (e) => {
 
   const { data, error } = await supabase.auth.signUp({
     email,
-    password
+    password,
+    options: {
+      redirectTo: 'https://julinhio.github.io/mon-equipe-ia/'
+    }
   });
 
   if (error) {
